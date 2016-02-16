@@ -7,14 +7,17 @@ require 'minitest/pride'
 #   * `last_name`: given a name in string, return the last name.
 
 # WRITE YOUR CODE HERE.
-def first_name
-  print StringSplitChallenge.first_name
-  no idea.....
+def first_name(name)
+  name_array = name.split
+  return "" if name_array == []
+  return name_array[0] if name_array.length == 1
+  name_array[0..-2].join(" ")
+
 end
 
 def last_name
-  print StringSplitChallenge.last_name
-  no idea....
+  name_array = name.splitk
+  name_array.length > 1 ? name_array[-1] : ""
 end
 
 class StringSplitChallenge < MiniTest::Test
